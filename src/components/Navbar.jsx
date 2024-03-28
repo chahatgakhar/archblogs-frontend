@@ -23,7 +23,7 @@ import axios from "axios";
 const Navbar = () => {
   const [searchBoxVisibility, setSearchBoxVisibility] = useState(false);
   const [userNavBox, setUserNavBox] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
+  //const [searchValue, setSearchValue] = useState("");
   let navigate = useNavigate();
 
   const {
@@ -67,7 +67,7 @@ const Navbar = () => {
     if (e.keyCode == 13 && query.length) {
       navigate(`/search/${query}`);
       setSearchBoxVisibility(false);
-      setSearchValue("");
+      //setSearchValue("");
     }
   };
 
@@ -105,8 +105,6 @@ const Navbar = () => {
             type="text"
             placeholder="Search"
             className="w-full bg-grey p-4 pl-6 pr-[12%] md:pr-6 rounded-full placeholder:text-dark-grey md:pl-14"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
             onKeyDown={handleSearchOnKeyDown}
           />
 
