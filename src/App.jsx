@@ -9,7 +9,7 @@ import { lookupInSession } from "./assets/Sessions.jsx";
 import SideNav from "./components/SideNav.jsx";
 import ChangePassword from "./components/ChangePassword.jsx";
 import BlogManager from "./components/BlogManager.jsx";
-import Navbar from "./components/navbar.jsx";
+
 import SearchPage from "./components/SearchPage.jsx";
 
 //pages
@@ -21,6 +21,7 @@ import BlogPage from "./pages/BlogPage.jsx";
 import UserProfilePage from "./pages/UserProfilePage.jsx";
 import UserAuthForm from "./pages/UserAuthForm.jsx";
 import Home from "./pages/Home.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 //export context
 export const UserContext = createContext({});
