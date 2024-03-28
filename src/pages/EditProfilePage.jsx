@@ -48,8 +48,6 @@ const EditProfilePage = () => {
   } = profile;
 
   useEffect(() => {
-    activeTab.current.click();
-
     if (access_token) {
       axios
         .post(import.meta.env.VITE_SERVER_DOMAIN + "/get-profile", {
